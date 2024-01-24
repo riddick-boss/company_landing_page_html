@@ -1,0 +1,111 @@
+/* OLD 2 */
+/* main {
+    max-width: 1240px;
+    margin: auto;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(26, 25, 25);
+    height: 100px;
+    max-width: 1260px;
+    margin: auto;
+}
+
+.cols {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.column {
+    width: 270px;
+} */
+
+body {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(26, 25, 25);
+    height: 100px;
+    max-width: 1260px;
+    margin: auto;
+}
+
+.logo {
+    height: 100px;
+}
+
+.left {
+    display: flex;
+}
+
+.title {
+    color: white;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    height: 100px;
+}
+
+.link {
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.link:hover {
+    color: silver;
+}
+
+/* how to move to separate file? */
+@media screen and (max-width: 700px) {
+    header {
+        display: block;
+        height: auto;
+    }
+
+    .navigation {
+        display: block;
+        height: auto;
+    }
+
+    .menu-item {
+        padding-top: 10px;
+    }
+}
+
+section {
+    height: 450px;
+    background-image: url("./car-repair-362150_1280.jpg");
+    max-width: 1260px;
+    margin: auto;
+    background-position: top center;
+    padding-top: 50px;
+}
+
+.card {
+    width: 80%;
+    margin-left: 10%;
+    height: 400px;
+    background-color: rgba(180, 180, 180, 0.7);
+    border-radius: 30px;
+}
