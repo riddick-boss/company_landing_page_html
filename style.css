@@ -1,9 +1,3 @@
-/* OLD 2 */
-/* main {
-    max-width: 1240px;
-    margin: auto;
-}
-
 body {
     margin: 0;
 }
@@ -11,58 +5,47 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    background-color: rgb(26, 25, 25);
-    height: 100px;
-    max-width: 1260px;
-    margin: auto;
-}
-
-.cols {
-    display: flex;
-    justify-content: space-evenly;
     align-items: center;
-    flex-wrap: wrap;
-}
-
-.column {
-    width: 270px;
-} */
-
-body {
-    margin: 0;
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
     background-color: rgb(26, 25, 25);
     height: 100px;
+    width: 100%;
     max-width: 1260px;
     margin: auto;
+}
+
+.mobileHeader {
+    display: flex;
+}
+
+.titleContainer {
+    display: flex;
+    height: 100px;
 }
 
 .logo {
     height: 100px;
 }
 
-.left {
-    display: flex;
-}
-
-.title {
+.companyName {
     color: white;
     padding-left: 10px;
     display: flex;
     align-items: center;
 }
 
-.navigation {
-    display: flex;
-    align-items: center;
+.hamburger {
+    display: none;
+}
+
+.menu {
+    display: block;
+}
+
+.list {
+    display: grid;
+    grid-auto-flow: column;
     list-style-type: none;
-    padding: 0;
-    margin: 0;
-    height: 100px;
+    column-gap: 40px;
 }
 
 .link {
@@ -74,23 +57,6 @@ header {
 
 .link:hover {
     color: silver;
-}
-
-/* how to move to separate file? */
-@media screen and (max-width: 700px) {
-    header {
-        display: block;
-        height: auto;
-    }
-
-    .navigation {
-        display: block;
-        height: auto;
-    }
-
-    .menu-item {
-        padding-top: 10px;
-    }
 }
 
 section {
@@ -108,4 +74,109 @@ section {
     height: 400px;
     background-color: rgba(180, 180, 180, 0.7);
     border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    text-align: center;
+}
+
+.whyUs {
+    max-width: 1260px;
+    margin: auto;
+}
+
+.whyUsTitle {
+    text-align: center;
+}
+
+.whyUsStrenghts {
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-auto-flow: column;
+    list-style-type: none;
+    justify-content: center;
+    column-gap: 60px;
+}
+
+.whyUsDesc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 15px;
+    width: 300px;
+    text-align: center;
+}
+
+.whyUsImg {
+    height: 50px;
+    width: 50px;
+}
+
+.offerImg {
+    width: 270px;
+}
+
+@media screen and (min-width: 801px) {
+    .menu {
+      display: block !important;
+    }
+  }
+
+/* TODO: how to move to separate file? */
+@media screen and (max-width: 800px) {
+    header {
+        display: block;
+        height: auto;
+    }
+
+    .mobileHeader {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .hamburger {
+        margin-right: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hamburger button {
+        height: 40%;
+        font-weight: bold;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .list {
+        display: block;
+        height: auto;
+    }
+
+    .list-item {
+        padding-top: 10px;
+    }
+
+    .whyUsStrenghts {
+        display: block;
+        grid-auto-flow: row;
+        list-style-type: none;
+    }
+
+    .whyUsDesc {
+        margin-left: auto;
+        margin-right: auto;
+    }
 }

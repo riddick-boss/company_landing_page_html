@@ -1,8 +1,12 @@
-console.log("hello world");
-let num = 10
-console.log(num);
-console.log(typeof (num));
+const menu = document.querySelector(".menu")
+let isMenuOpen = false;
 
-const companyName = document.getElementById("companyName")
-companyName.innerHTML = "New company name"
-companyName.style.backgroundColor = "#ff0000"
+function toggleMenu() {
+    if(isMenuOpen) {
+        menu.style.display = "none";
+        isMenuOpen = false
+    } else {
+        menu.style.display = "block";
+        isMenuOpen = true
+    }
+}
