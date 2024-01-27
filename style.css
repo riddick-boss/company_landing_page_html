@@ -88,6 +88,18 @@ section {
     text-align: center;
 }
 
+.cardContent button {
+    background-color: gray;
+    border: none;
+    border-radius: 12px;
+    padding: 12px;
+    transition-duration: 0.4s;
+}
+
+.cardContent button:hover {
+    background-color: lightgrey;
+}
+
 .whyUs {
     max-width: 1260px;
     margin: auto;
@@ -127,11 +139,10 @@ section {
 
 @media screen and (min-width: 801px) {
     .menu {
-      display: block !important;
+        display: block !important;
     }
-  }
+}
 
-/* TODO: how to move to separate file? */
 @media screen and (max-width: 800px) {
     header {
         display: block;
